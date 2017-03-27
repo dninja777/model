@@ -11,8 +11,8 @@ class ContactsController < ApplicationController
            email = params[:contact][:email]
            phone_number = params[:contact][:phone_number]
            ethnicity = params[:contact][:ethnicity]
-           age = params [:contact][:age]
-           message = params [:contact][:message]
+           age = params[:contact][:age]
+           message = params[:contact][:message]
            
            ContactMailer.contact_email(name,email,phone_number,ethnicity,age,message).deliver
            flash[:success] = "You Sent Your Registration"
