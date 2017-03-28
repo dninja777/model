@@ -8,8 +8,9 @@
         <div class="alert alert-danger col-md-8 col-md-offset-2">
             <h5>Please Correct The Following Errors</h5>
             <% @contact.errors.messages.each do |msg| %>
+            <ul>
                 <li><%= msg %></li>
-                
+            </ul>
               <% end %>  
         </div>
         <% end %>
