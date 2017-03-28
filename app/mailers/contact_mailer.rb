@@ -9,7 +9,7 @@ class ContactMailer < ActionMailer::Base
         @message = message
         @phone_number = phone_number
        
-       mail(from:email, subject: 'Model Sign UP') 
+       mail(from: email, subject: 'Model Sign UP') 
     end
     
 end
