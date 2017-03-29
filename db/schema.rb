@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170327215448) do
+ActiveRecord::Schema.define(version: 20170329184501) do
 
   create_table "contacts", force: :cascade do |t|
     t.string   "name"
@@ -22,6 +22,18 @@ ActiveRecord::Schema.define(version: 20170327215448) do
     t.text     "message"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "picture_file_name"
+    t.string   "picture_content_type"
+    t.integer  "picture_file_size"
+    t.datetime "picture_updated_at"
+    t.string   "picture_two_file_name"
+    t.string   "picture_two_content_type"
+    t.integer  "picture_two_file_size"
+    t.datetime "picture_two_updated_at"
+    t.string   "picture_three_file_name"
+    t.string   "picture_three_content_type"
+    t.integer  "picture_three_file_size"
+    t.datetime "picture_three_updated_at"
   end
 
 end

@@ -6,13 +6,15 @@
     </head>
     
     <body>
-        
+       <%= image_tag("#{@picture}") %>
         <ul>
             <li>Name: <%= "#{@name}"%></li>
             <li>Email: <%= "#{@email}"%></li>
             <li>Age: <%= "#{@age}"%></li>
             <li>Ethnicity: <%= "#{@ethnicity}"%></li>
             <li>Phone Number <%= "#{@phone_number}"%></li>
+            <li><%= image_tag("#{@picture_two}") %></li>
+            <li><%= image_tag("#{@picture_three}") %></li>
         </ul>
         
         
